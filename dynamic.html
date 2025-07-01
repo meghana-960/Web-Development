@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tourist Places in Hyderabad</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-panel {
+      width: 25%;
+      background-color: #f9f9f9;
+      padding: 30px;
+      overflow-y: auto;
+    }
+
+    .left-panel h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .left-panel a button {
+      display: block;
+      width: 100%;
+      margin: 10px 0 5px;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .location {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .location a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .location a:hover {
+      text-decoration: underline;
+    }
+
+    .right-panel {
+      flex: 1;
+      padding: 20px;
+      animation: fadeSlide 1s ease forwards;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+
+    @keyframes fadeSlide {
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left-panel">
+      <h1>Tourist places in HYDERABAD</h1>
+
+      <a href="https://en.wikipedia.org/wiki/Charminar" target="display" id="char"><button>Charminar</button></a>
+      <div class="location">
+        📍 <a href="https://goo.gl/maps/19V6aCikxFYKeBPA7" target="_blank">Charminar, Old City, Hyderabad</a>
+      </div>
+
+      <a href="https://en.wikipedia.org/wiki/Golconda" target="display"><button>Golconda</button></a>
+      <div class="location">
+        📍 <a href="https://goo.gl/maps/tW2m3SsjLRoMFCms8" target="_blank">Golconda Fort, Khair Complex</a>
+      </div>
+
+      <a href="https://en.wikipedia.org/wiki/Hussain_Sagar" target="display"><button>Hussain Sagar</button></a>
+      <div class="location">
+        📍 <a href="https://goo.gl/maps/FLuFx9Bv88B2" target="_blank">Hussain Sagar Lake, Necklace Road</a>
+      </div>
+
+      <a href="https://en.wikipedia.org/wiki/Falaknuma_Palace" target="display"><button>Falaknuma Palace</button></a>
+      <div class="location">
+        📍 <a href="https://goo.gl/maps/LdAMWhY8zSB9vgbJ6" target="_blank">Falaknuma Palace, Engine Bowli</a>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <iframe src="" name="display"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>
+
